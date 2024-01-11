@@ -79,6 +79,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.PictureBox1.Location = New System.Drawing.Point(143, 31)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(251, 126)
@@ -240,5 +241,8 @@ Partial Class Form1
         outfile.Write("|")
         outfile.Write(PriceTextBox.Text)
         outfile.Write("|")
+        outfile.Write(PictureBox1.ImageLocation)
+        outfile.WriteLine()
+        outfile.Close()
     End Sub
 End Class
