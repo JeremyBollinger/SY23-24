@@ -1,4 +1,6 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿Imports System.IO
+
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -138,7 +140,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 30)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -146,19 +148,19 @@ Partial Class Form1
         '
         Me.NewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.SaveToolStripMenuItem1})
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(51, 26)
         Me.NewToolStripMenuItem.Text = "Cars"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(123, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.SaveToolStripMenuItem.Text = "New"
         '
         'SaveToolStripMenuItem1
         '
         Me.SaveToolStripMenuItem1.Name = "SaveToolStripMenuItem1"
-        Me.SaveToolStripMenuItem1.Size = New System.Drawing.Size(123, 26)
+        Me.SaveToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
         Me.SaveToolStripMenuItem1.Text = "Save"
         '
         'OpenFileDialog1
@@ -209,7 +211,8 @@ Partial Class Form1
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveToolStripMenuItem1 As ToolStripMenuItem
 
-    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
+    Dim records(50) As String
+    Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs)
         PictureBox1.Image = Nothing
         BrandTextBox.Text = ""
         ModelTextBox.Text = ""
@@ -229,7 +232,7 @@ Partial Class Form1
         PictureBox1.Load(OpenFileDialog1.FileName)
     End Sub
 
-    Private Sub SaveToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem1.Click
+    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
         Dim outfile As New IO.StreamWriter("data.txt")
         outfile.Write(BrandTextBox.Text)
         outfile.Write("|")
@@ -244,5 +247,14 @@ Partial Class Form1
         outfile.Write(PictureBox1.ImageLocation)
         outfile.WriteLine()
         outfile.Close()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If IO.File.Exists("data.txt") Then
+            Dim infile As New StreamReader("data.txt")
+            records(0) = infile.ReadLine
+            records(1) = infile.ReadLine
+            infile.Close()
+        End If
     End Sub
 End Class
