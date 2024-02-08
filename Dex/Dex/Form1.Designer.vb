@@ -1,6 +1,4 @@
-﻿Imports System.IO
-
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -24,237 +22,261 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.BrandTextBox = New System.Windows.Forms.TextBox()
-        Me.ModelTextBox = New System.Windows.Forms.TextBox()
-        Me.YearTextBox = New System.Windows.Forms.TextBox()
-        Me.MileageTextBox = New System.Windows.Forms.TextBox()
-        Me.PriceTextBox = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.BrandLabel = New System.Windows.Forms.Label()
-        Me.ModelLabel = New System.Windows.Forms.Label()
-        Me.YearLabel = New System.Windows.Forms.Label()
-        Me.MileageLabel = New System.Windows.Forms.Label()
-        Me.PriceLabel = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FIleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.BrandTextbox = New System.Windows.Forms.TextBox()
+        Me.ModelTextbox = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.YearTextbox = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.MilageTextbox = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.PriceTextbox = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FirstButton = New System.Windows.Forms.Button()
+        Me.PreviousButton = New System.Windows.Forms.Button()
+        Me.NextButton = New System.Windows.Forms.Button()
+        Me.LastButton = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'BrandTextBox
-        '
-        Me.BrandTextBox.Location = New System.Drawing.Point(166, 163)
-        Me.BrandTextBox.Name = "BrandTextBox"
-        Me.BrandTextBox.Size = New System.Drawing.Size(205, 22)
-        Me.BrandTextBox.TabIndex = 0
-        '
-        'ModelTextBox
-        '
-        Me.ModelTextBox.Location = New System.Drawing.Point(166, 206)
-        Me.ModelTextBox.Name = "ModelTextBox"
-        Me.ModelTextBox.Size = New System.Drawing.Size(205, 22)
-        Me.ModelTextBox.TabIndex = 1
-        '
-        'YearTextBox
-        '
-        Me.YearTextBox.Location = New System.Drawing.Point(166, 249)
-        Me.YearTextBox.Name = "YearTextBox"
-        Me.YearTextBox.Size = New System.Drawing.Size(205, 22)
-        Me.YearTextBox.TabIndex = 2
-        '
-        'MileageTextBox
-        '
-        Me.MileageTextBox.Location = New System.Drawing.Point(166, 292)
-        Me.MileageTextBox.Name = "MileageTextBox"
-        Me.MileageTextBox.Size = New System.Drawing.Size(205, 22)
-        Me.MileageTextBox.TabIndex = 3
-        '
-        'PriceTextBox
-        '
-        Me.PriceTextBox.Location = New System.Drawing.Point(166, 335)
-        Me.PriceTextBox.Name = "PriceTextBox"
-        Me.PriceTextBox.Size = New System.Drawing.Size(205, 22)
-        Me.PriceTextBox.TabIndex = 4
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.PictureBox1.Location = New System.Drawing.Point(143, 31)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(251, 126)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
-        '
-        'BrandLabel
-        '
-        Me.BrandLabel.AutoSize = True
-        Me.BrandLabel.Location = New System.Drawing.Point(87, 169)
-        Me.BrandLabel.Name = "BrandLabel"
-        Me.BrandLabel.Size = New System.Drawing.Size(46, 16)
-        Me.BrandLabel.TabIndex = 7
-        Me.BrandLabel.Text = "Brand:"
-        '
-        'ModelLabel
-        '
-        Me.ModelLabel.AutoSize = True
-        Me.ModelLabel.Location = New System.Drawing.Point(85, 212)
-        Me.ModelLabel.Name = "ModelLabel"
-        Me.ModelLabel.Size = New System.Drawing.Size(48, 16)
-        Me.ModelLabel.TabIndex = 8
-        Me.ModelLabel.Text = "Model:"
-        '
-        'YearLabel
-        '
-        Me.YearLabel.AutoSize = True
-        Me.YearLabel.Location = New System.Drawing.Point(94, 255)
-        Me.YearLabel.Name = "YearLabel"
-        Me.YearLabel.Size = New System.Drawing.Size(39, 16)
-        Me.YearLabel.TabIndex = 9
-        Me.YearLabel.Text = "Year:"
-        '
-        'MileageLabel
-        '
-        Me.MileageLabel.AutoSize = True
-        Me.MileageLabel.Location = New System.Drawing.Point(67, 298)
-        Me.MileageLabel.Name = "MileageLabel"
-        Me.MileageLabel.Size = New System.Drawing.Size(59, 16)
-        Me.MileageLabel.TabIndex = 10
-        Me.MileageLabel.Text = "Mileage:"
-        '
-        'PriceLabel
-        '
-        Me.PriceLabel.AutoSize = True
-        Me.PriceLabel.Location = New System.Drawing.Point(92, 341)
-        Me.PriceLabel.Name = "PriceLabel"
-        Me.PriceLabel.Size = New System.Drawing.Size(41, 16)
-        Me.PriceLabel.TabIndex = 11
-        Me.PriceLabel.Text = "Price:"
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FIleToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 30)
-        Me.MenuStrip1.TabIndex = 13
+        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FIleToolStripMenuItem
+        '
+        Me.FIleToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.SaveToolStripMenuItem})
+        Me.FIleToolStripMenuItem.Name = "FIleToolStripMenuItem"
+        Me.FIleToolStripMenuItem.Size = New System.Drawing.Size(51, 24)
+        Me.FIleToolStripMenuItem.Text = "Cars"
         '
         'NewToolStripMenuItem
         '
-        Me.NewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.SaveToolStripMenuItem1})
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(51, 26)
-        Me.NewToolStripMenuItem.Text = "Cars"
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(123, 26)
+        Me.NewToolStripMenuItem.Text = "New"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.SaveToolStripMenuItem.Text = "New"
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(123, 26)
+        Me.SaveToolStripMenuItem.Text = "Save"
         '
-        'SaveToolStripMenuItem1
+        'PictureBox1
         '
-        Me.SaveToolStripMenuItem1.Name = "SaveToolStripMenuItem1"
-        Me.SaveToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
-        Me.SaveToolStripMenuItem1.Text = "Save"
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Location = New System.Drawing.Point(132, 34)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(186, 108)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(23, 148)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(46, 16)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Brand:"
+        '
+        'BrandTextbox
+        '
+        Me.BrandTextbox.Location = New System.Drawing.Point(132, 146)
+        Me.BrandTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BrandTextbox.Name = "BrandTextbox"
+        Me.BrandTextbox.Size = New System.Drawing.Size(286, 22)
+        Me.BrandTextbox.TabIndex = 3
+        '
+        'ModelTextbox
+        '
+        Me.ModelTextbox.Location = New System.Drawing.Point(132, 172)
+        Me.ModelTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ModelTextbox.Name = "ModelTextbox"
+        Me.ModelTextbox.Size = New System.Drawing.Size(286, 22)
+        Me.ModelTextbox.TabIndex = 5
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(23, 174)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(48, 16)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Model:"
+        '
+        'YearTextbox
+        '
+        Me.YearTextbox.Location = New System.Drawing.Point(132, 198)
+        Me.YearTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.YearTextbox.Name = "YearTextbox"
+        Me.YearTextbox.Size = New System.Drawing.Size(286, 22)
+        Me.YearTextbox.TabIndex = 7
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label3.Location = New System.Drawing.Point(23, 201)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(39, 16)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Year:"
+        '
+        'MilageTextbox
+        '
+        Me.MilageTextbox.Location = New System.Drawing.Point(132, 225)
+        Me.MilageTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MilageTextbox.Name = "MilageTextbox"
+        Me.MilageTextbox.Size = New System.Drawing.Size(286, 22)
+        Me.MilageTextbox.TabIndex = 9
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Location = New System.Drawing.Point(23, 227)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(51, 16)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Milage:"
+        '
+        'PriceTextbox
+        '
+        Me.PriceTextbox.Location = New System.Drawing.Point(132, 251)
+        Me.PriceTextbox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PriceTextbox.Name = "PriceTextbox"
+        Me.PriceTextbox.Size = New System.Drawing.Size(286, 22)
+        Me.PriceTextbox.TabIndex = 11
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(23, 254)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(41, 16)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Price:"
         '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'FirstButton
+        '
+        Me.FirstButton.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.FirstButton.Location = New System.Drawing.Point(324, 34)
+        Me.FirstButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.FirstButton.Name = "FirstButton"
+        Me.FirstButton.Size = New System.Drawing.Size(94, 23)
+        Me.FirstButton.TabIndex = 12
+        Me.FirstButton.Text = "First"
+        Me.FirstButton.UseVisualStyleBackColor = False
+        '
+        'PreviousButton
+        '
+        Me.PreviousButton.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.PreviousButton.Location = New System.Drawing.Point(324, 90)
+        Me.PreviousButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PreviousButton.Name = "PreviousButton"
+        Me.PreviousButton.Size = New System.Drawing.Size(94, 23)
+        Me.PreviousButton.TabIndex = 13
+        Me.PreviousButton.Text = "Previous"
+        Me.PreviousButton.UseVisualStyleBackColor = False
+        '
+        'NextButton
+        '
+        Me.NextButton.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.NextButton.Location = New System.Drawing.Point(324, 62)
+        Me.NextButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.NextButton.Name = "NextButton"
+        Me.NextButton.Size = New System.Drawing.Size(94, 23)
+        Me.NextButton.TabIndex = 14
+        Me.NextButton.Text = "Next"
+        Me.NextButton.UseVisualStyleBackColor = False
+        '
+        'LastButton
+        '
+        Me.LastButton.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.LastButton.Location = New System.Drawing.Point(324, 118)
+        Me.LastButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LastButton.Name = "LastButton"
+        Me.LastButton.Size = New System.Drawing.Size(94, 23)
+        Me.LastButton.TabIndex = 15
+        Me.LastButton.Text = "Last"
+        Me.LastButton.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.PriceLabel)
-        Me.Controls.Add(Me.MileageLabel)
-        Me.Controls.Add(Me.YearLabel)
-        Me.Controls.Add(Me.ModelLabel)
-        Me.Controls.Add(Me.BrandLabel)
+        Me.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.ClientSize = New System.Drawing.Size(800, 360)
+        Me.Controls.Add(Me.LastButton)
+        Me.Controls.Add(Me.NextButton)
+        Me.Controls.Add(Me.PreviousButton)
+        Me.Controls.Add(Me.FirstButton)
+        Me.Controls.Add(Me.PriceTextbox)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.MilageTextbox)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.YearTextbox)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.ModelTextbox)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.BrandTextbox)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.PriceTextBox)
-        Me.Controls.Add(Me.MileageTextBox)
-        Me.Controls.Add(Me.YearTextBox)
-        Me.Controls.Add(Me.ModelTextBox)
-        Me.Controls.Add(Me.BrandTextBox)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents BrandTextBox As TextBox
-    Friend WithEvents ModelTextBox As TextBox
-    Friend WithEvents YearTextBox As TextBox
-    Friend WithEvents MileageTextBox As TextBox
-    Friend WithEvents PriceTextBox As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents BrandLabel As Label
-    Friend WithEvents ModelLabel As Label
-    Friend WithEvents YearLabel As Label
-    Friend WithEvents MileageLabel As Label
-    Friend WithEvents PriceLabel As Label
     Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FIleToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NewToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SaveToolStripMenuItem1 As ToolStripMenuItem
-
-    Dim records(50) As String
-    Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        PictureBox1.Image = Nothing
-        BrandTextBox.Text = ""
-        ModelTextBox.Text = ""
-        YearTextBox.Text = ""
-        MileageTextBox.Text = ""
-        PriceTextBox.Text = ""
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        OpenFileDialog1.ShowDialog()
-    End Sub
-
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents BrandTextbox As TextBox
+    Friend WithEvents ModelTextbox As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents YearTextbox As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents MilageTextbox As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents PriceTextbox As TextBox
+    Friend WithEvents Label5 As Label
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-
-    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
-        PictureBox1.Load(OpenFileDialog1.FileName)
-    End Sub
-
-    Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
-        Dim outfile As New IO.StreamWriter("data.txt")
-        outfile.Write(BrandTextBox.Text)
-        outfile.Write("|")
-        outfile.Write(ModelTextBox.Text)
-        outfile.Write("|")
-        outfile.Write(YearTextBox.Text)
-        outfile.Write("|")
-        outfile.Write(MileageTextBox.Text)
-        outfile.Write("|")
-        outfile.Write(PriceTextBox.Text)
-        outfile.Write("|")
-        outfile.Write(PictureBox1.ImageLocation)
-        outfile.WriteLine()
-        outfile.Close()
-    End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If IO.File.Exists("data.txt") Then
-            Dim infile As New StreamReader("data.txt")
-            records(0) = infile.ReadLine
-            records(1) = infile.ReadLine
-            infile.Close()
-        End If
-    End Sub
+    Friend WithEvents FirstButton As Button
+    Friend WithEvents PreviousButton As Button
+    Friend WithEvents NextButton As Button
+    Friend WithEvents LastButton As Button
 End Class

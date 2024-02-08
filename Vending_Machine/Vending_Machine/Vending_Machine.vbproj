@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0A40CFE-69DE-4E3E-90F2-24D283F695BA}</ProjectGuid>
+    <ProjectGuid>{C57AEE3C-C23E-4D4B-B350-7212A42A39C1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Dex.My.MyApplication</StartupObject>
-    <RootNamespace>Dex</RootNamespace>
-    <AssemblyName>Dex</AssemblyName>
+    <StartupObject>Vending_Machine.My.MyApplication</StartupObject>
+    <RootNamespace>Vending_Machine</RootNamespace>
+    <AssemblyName>Vending_Machine</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Dex.xml</DocumentationFile>
+    <DocumentationFile>Vending_Machine.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Dex.xml</DocumentationFile>
+    <DocumentationFile>Vending_Machine.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CoinSlot.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>

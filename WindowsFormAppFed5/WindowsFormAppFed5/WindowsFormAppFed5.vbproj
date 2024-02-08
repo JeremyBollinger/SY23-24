@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0A40CFE-69DE-4E3E-90F2-24D283F695BA}</ProjectGuid>
+    <ProjectGuid>{14547D8A-86DF-4E55-93FC-E1EC732982FD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Dex.My.MyApplication</StartupObject>
-    <RootNamespace>Dex</RootNamespace>
-    <AssemblyName>Dex</AssemblyName>
+    <StartupObject>WindowsFormAppFed5.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsFormAppFed5</RootNamespace>
+    <AssemblyName>WindowsFormAppFed5</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Dex.xml</DocumentationFile>
+    <DocumentationFile>WindowsFormAppFed5.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Dex.xml</DocumentationFile>
+    <DocumentationFile>WindowsFormAppFed5.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -73,6 +73,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clicker.vb" />
+    <Compile Include="ClickerControl.Designer.vb">
+      <DependentUpon>ClickerControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClickerControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +104,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ClickerControl.resx">
+      <DependentUpon>ClickerControl.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
