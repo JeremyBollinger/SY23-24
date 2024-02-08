@@ -1,6 +1,7 @@
 ﻿Imports System.Data.OleDb
 
 Public Class CoinSlot
+    Public Event CoinReturnEvent(d As Integer, q As Integer, dm As Integer, n As Integer)
     Public Property Dollar As Integer
     Public Property Quarter As Integer
     Public Property Dime As Integer
@@ -10,6 +11,14 @@ Public Class CoinSlot
             Return Dollar + Quarter * 0.25 + Dime * 0.1 + Nickle * 0.05
         End Get
     End Property
+    Public Sub CoinReturn()
+        RaiseEvent CoinReturnEvent(Dollar, Quarter, Dime, Nickle)
+        Dollar = 0
+        Quarter = 0
+        Dime = 0
+        Nickle = 0
+    End Sub
+
     Public Sub insertDollar()
         Dollar = Dollar + 1
     End Sub
